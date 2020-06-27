@@ -141,6 +141,8 @@ Error message and password prompt
 
 <p>This <a class="tc-tiddlylink-external" href="https://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
+<li>$:/config/AutoSave</li>
+
 <li>$:/config/DownloadSaver/AutoSave</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/import</li>
@@ -407,6 +409,8 @@ Error message and password prompt
 
 <li>normal.gif</li>
 
+<li>Proof of the Central Limit Theorem</li>
+
 <li>R Logistic Regression Output Explanation</li>
 
 <li>Sampled Means of a Fair Coin Toss.png</li>
@@ -427,6 +431,9 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
+<div created="20200627084912417" modified="20200627084912417" title="$:/config/AutoSave">
+<pre>no</pre>
+</div>
 <div created="20200607014043944" modified="20200607014053587" title="$:/config/DownloadSaver/AutoSave">
 <pre>yes</pre>
 </div>
@@ -10006,10 +10013,10 @@ Error message and password prompt
 <div created="20200610101408130" modified="20200610101735094" title="$:/state/image-picker/system--1899510546">
 <pre>hide</pre>
 </div>
-<div created="20200627042409625" modified="20200627074825234" title="$:/state/showeditpreview">
-<pre>no</pre>
+<div created="20200627042409625" modified="20200627084732415" title="$:/state/showeditpreview">
+<pre>yes</pre>
 </div>
-<div created="20200610081657887" modified="20200627075440203" title="$:/state/sidebar">
+<div created="20200610081657887" modified="20200627102930069" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20200607013854703" modified="20200607013856991" title="$:/state/tab--2112689675">
@@ -10018,10 +10025,10 @@ Error message and password prompt
 <div created="20200610081619916" modified="20200610081624497" title="$:/state/tab--86143343">
 <pre>$:/core/ui/ControlPanel/Plugins/Installed/Plugins</pre>
 </div>
-<div created="20200607012816167" modified="20200610081835940" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Plugins</pre>
+<div created="20200607012816167" modified="20200627084909724" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
-<div created="20200607012818588" modified="20200610081809318" title="$:/state/tab-2065006209">
+<div created="20200607012818588" modified="20200627084945131" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/General</pre>
 </div>
 <div created="20200607013753219" modified="20200627080411515" title="$:/state/tab/sidebar--595412856">
@@ -10030,7 +10037,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20200627040551799" list="[[Central Limit Theorem]] [[R Logistic Regression Output Explanation]] GettingStarted" modified="20200627040551799" title="$:/StoryList">
+<div created="20200627040551799" list="[[Proof of the Central Limit Theorem]] [[Central Limit Theorem]] [[R Logistic Regression Output Explanation]] GettingStarted" modified="20200627084902274" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200610081721054" modified="20200610081721054" title="$:/temp/HidePluginWarning">
@@ -11159,7 +11166,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
     }
 }</pre>
 </div>
-<div created="20200627040954551" modified="20200627083204936" tags="Probability" title="Central Limit Theorem">
+<div created="20200627040954551" modified="20200627084608762" tags="Probability" title="Central Limit Theorem">
 <pre>Recently, there has been a lot of buzz around the Central Limit Theorem. What really is it?
 
 Well, it depends on which Central Limit Theorem you're talking about. There are at least 6 different versions: 
@@ -11173,7 +11180,7 @@ Well, it depends on which Central Limit Theorem you're talking about. There are 
 
 ''The most basic form of CLT is the Lindeberg–Lévy CLT. ''
 
-It says that if $$X_1, X_2, \dots, X_n$$ are i.i.d Random Variables from a distribution with mean $$\mu$$ and variance $$\sigma^2$$ and their mean is represented as $$\bar{X_n} = \frac{X_1 + X_2 + \dots + X_n}{n}$$ then:
+It says that if $$X_1, X_2, \dots, X_n$$ are i.i.d Random Variables from a distribution with mean $$\mu$$ and finite variance $$\sigma^2$$ and their mean is represented as $$\bar{X_n} = \frac{X_1 + X_2 + \dots + X_n}{n}$$ then:
 
 $$\sqrt{n}(\bar{X_1} - \mu), \sqrt{n}(\bar{X_2} - \mu), \dots$$ __converges in distribution__ to $$N(0, \sigma^2)$$ as $$n \rightarrow \infty$$.
 
@@ -11301,6 +11308,18 @@ Well if you solve this equation $$\frac{\hat{p}}{1-\hat{p}} = e^{K(x)}$$ for $$\
 </div>
 <div title="normal.gif" type="image/gif">
 <pre>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</pre>
+</div>
+<div created="20200627083405347" modified="20200627102926719" tags="" title="Proof of the Central Limit Theorem">
+<pre>Let's recall what the central limit theorem says:
+
+If $$X_1, X_2, \dots, X_n$$ are i.i.d Random Variables from a distribution with mean $$\mu$$ and finite variance $$\sigma^2$$ and $$\bar{X_n} = \frac{X_1 + \dots X_n}{n}$$ then the sequence $$\sqrt{n}({\bar{X_n} - \mu})$$ converges in distribution to $$N(0, \sigma^2)$$
+
+For the proof, we surely need to compare the CDFs of X_n with Normal Distribution.
+
+We can try maybe that $$\lim\limits_{n \to \infty }[F_n(x)-F(x)] = 0$$ for every x. The basic hurdle is that we don't know anything about $$F_n(x)$$. 
+
+Let's check wikipedia. Okay, so we need to understand characteristic functions (the basics), and read a long answer to prove this. 
+</pre>
 </div>
 <div created="20200610104002205" modified="20200611073359386" tags="[[Machine Learning]]" title="R Logistic Regression Output Explanation">
 <pre>Here's the output of glm in R. 

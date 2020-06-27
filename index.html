@@ -165,6 +165,8 @@ Error message and password prompt
 
 <li>$:/state/image-picker/system--1899510546</li>
 
+<li>$:/state/showeditpreview</li>
+
 <li>$:/state/sidebar</li>
 
 <li>$:/state/tab--2112689675</li>
@@ -392,6 +394,8 @@ Error message and password prompt
 <li>$:/themes/tiddlywiki/snowwhite</li>
 
 <li>$:/themes/tiddlywiki/vanilla</li>
+
+<li>Central Limit Theorem</li>
 
 <li>Hello World!</li>
 
@@ -9995,8 +9999,11 @@ Error message and password prompt
 <div created="20200610101408130" modified="20200610101735094" title="$:/state/image-picker/system--1899510546">
 <pre>hide</pre>
 </div>
-<div created="20200610081657887" modified="20200611064301094" title="$:/state/sidebar">
+<div created="20200627042409625" modified="20200627042409625" title="$:/state/showeditpreview">
 <pre>yes</pre>
+</div>
+<div created="20200610081657887" modified="20200627042407385" title="$:/state/sidebar">
+<pre>no</pre>
 </div>
 <div created="20200607013854703" modified="20200607013856991" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Basics</pre>
@@ -10016,7 +10023,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20200611040909957" list="[[R Logistic Regression Output Explanation]]" modified="20200611040909957" title="$:/StoryList">
+<div created="20200627040551799" list="[[Central Limit Theorem]] [[R Logistic Regression Output Explanation]] GettingStarted" modified="20200627040551799" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200610081721054" modified="20200610081721054" title="$:/temp/HidePluginWarning">
@@ -10080,7 +10087,7 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20200610081903249" modified="20200611063824013" title="$:/temp/NewTagName">
+<div created="20200610081903249" modified="20200627041010878" title="$:/temp/NewTagName">
 <pre></pre>
 </div>
 <div author="Paco Rivière" core-version="&gt;=5.0.0" created="20200610081629504" dependents="" description="Catalan (Spain)" icon="data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22810%22%20height%3D%22540%22%3E%0A%3Crect%20width%3D%22810%22%20height%3D%22540%22%20fill%3D%22%23FCDD09%22%2F%3E%0A%3Cpath%20stroke%3D%22%23DA121A%22%20stroke-width%3D%2260%22%20d%3D%22M0%2C90H810m0%2C120H0m0%2C120H810m0%2C120H0%22%2F%3E%0A%3C%2Fsvg%3E" modified="20200610081629504" name="ca-ES" original-plugin-type="language" original-tags="" original-title="$:/languages/ca-ES" original-type="application/json" requires-reload="no" server-url="https://tiddlywiki.com/library/v5.1.22/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.22/index.html/$:/languages/ca-ES" type="text/vnd.tiddlywiki" version="5.1.22">
@@ -11144,6 +11151,37 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
         }
     }
 }</pre>
+</div>
+<div created="20200627040954551" modified="20200627042520591" tags="Probability" title="Central Limit Theorem">
+<pre>Recently, there has been a lot of buzz around the Central Limit Theorem. What really is it?
+
+Well, it depends on which Central Limit Theorem you're talking about. There are at least 6 different versions: 
+
+# The Classical CLT (Also known as the Lindeberg–Lévy CLT)
+# Lyapunov CLT
+# Lindeberg CLT
+# Multidimensional CLT
+# CLT under weak dependence
+# Martingale difference CLT
+
+''The most basic form of CLT is the Lindeberg–Lévy CLT. ''
+
+It says that if $$X_1, X_2, \dots, X_n$$ are i.i.d Random Variables from a distribution with mean $$\mu$$ and variance $$\sigma^2$$ and their mean is represented as $$\bar{X_n} = \frac{X_1 + X_2 + \dots + X_n}{n}$$ then:
+
+$$\sqrt{n}(X_1 - \mu), \sqrt{n}(X_2 - \mu), \dots$$ __converges in distribution__ to $$N(\mu, \sigma^2)$$ as $$n \rightarrow \infty$$.
+
+
+So, for example, if $$X_1, X_2, \dots X_n$$ are outcomes of a fair coin toss then the sequence,
+
+$$\sqrt{n}(X_1 - \mu), \sqrt{n}(X_2 - \mu), \dots$$ __converges in distribution__ to $$N(0.5, 0.25))$$ as $$n \rightarrow \infty$$.
+
+''But what is this __converges in distribution__?''
+
+
+
+
+
+</pre>
 </div>
 <div created="20200607013513980" modified="20200607021015018" tags="" title="Hello World!">
 <pre>Let's see if this works! :) Can it save on Github Pages?</pre>
